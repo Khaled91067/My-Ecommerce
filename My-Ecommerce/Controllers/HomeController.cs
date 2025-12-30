@@ -10,6 +10,7 @@ namespace My_Ecommerce.Controllers
         {
             SouqComContext db = new SouqComContext();
             var cats = db.Categories.ToList();
+            ViewBag.Products = db.Products.ToList();
             return View(cats);
         }
 

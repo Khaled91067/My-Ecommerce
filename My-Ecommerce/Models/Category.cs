@@ -13,5 +13,7 @@ public partial class Category
 
     public string? Description { get; set; }
 
+    public string? Slug { get; set; }
+
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
 }
